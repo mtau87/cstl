@@ -1,9 +1,10 @@
 cmake_minimum_required(VERSION 3.5)
-project(cstl)
+project(imi_stl)
 
 include_directories(inc)
+include_directories(.)
 
-add_library(${PROJECT_NAME} SHARED
+add_library(${PROJECT_NAME}
         inc/c_algorithms.h
         inc/c_array.h
         inc/c_deque.h
@@ -24,7 +25,7 @@ add_library(${PROJECT_NAME} SHARED
         src/c_util.c
         )
 
-add_executable(tstclib
+add_executable(test_imi_stl
         test/t_c_algorithms.c
         test/t_c_array.c
         test/t_c_deque.c
@@ -32,5 +33,5 @@ add_executable(tstclib
         test/t_c_rb.c
         test/t_c_set.c
         test/t_c_slist.c
-        test/t_clib.c)
-target_link_libraries(tstclib ${PROJECT_NAME})
+        test/test.cpp)
+target_link_libraries(test_imi_stl ${PROJECT_NAME})

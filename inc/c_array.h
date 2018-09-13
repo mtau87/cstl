@@ -25,6 +25,7 @@
 #ifndef _C_ARRAY_H_
 #define _C_ARRAY_H_
 
+#include "c_lib.h"
 struct cstl_array;
 
 extern struct cstl_array* cstl_array_new ( size_t init_size, cstl_compare fn_c, cstl_destroy fn_d);

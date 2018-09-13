@@ -23,6 +23,9 @@
  ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **/
 
 #include <stdio.h>
+#include "map.hpp"
+#include "vector.hpp"
+/*
 extern void test_c_array();
 extern void test_c_deque();
 extern void test_c_tree();
@@ -32,14 +35,13 @@ extern void test_c_map();
 extern void test_c_slist();
 extern void test_c_map();
 extern void test_c_algorithms();
-
 int main( int argc, char**argv ) {
     size_t i = 0;
     for (i = 0; i < 10000; i++)
     {
         printf("Performing test for dynamic array\n");
         test_c_array();
-        /*printf("Performing test for deque\n");
+        printf("Performing test for deque\n");
         test_c_deque();
         printf("Performing test for sets\n");
         test_c_set();
@@ -48,7 +50,12 @@ int main( int argc, char**argv ) {
         printf("Performing test for slist\n");
         test_c_slist();
         printf("Performing algorithms tests\n");
-        test_c_algorithms();*/
+        test_c_algorithms();
     }
+    return 0;
+}
+*/
+
+int main( int argc, char**argv ) {
     return 0;
 }

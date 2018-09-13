@@ -25,6 +25,8 @@
 #ifndef _C_MAP_H_
 #define _C_MAP_H_
 
+#include "c_lib.h"
+
 struct cstl_map;
 
 extern struct cstl_map* cstl_map_new( cstl_compare fn_c_k, cstl_destroy fn_k_d, cstl_destroy fn_v_d);
