@@ -1,7 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(cstl C)
-
-set(CMAKE_C_STANDARD 11)
+project(cstl)
 
 include_directories(inc)
 
